@@ -117,7 +117,7 @@ class BookstoreServiceApplicationTests {
       requestHeaders
     );
     ResponseEntity<Book> updateAuthorBookLinkResponse =
-      this.testRestTemplate.withBasicAuth("Admin", "password")
+      this.testRestTemplate.withBasicAuth("admin", "password")
         .exchange(
           AUTHORS_ENDPOINT + "/7/book",
           HttpMethod.PUT,
